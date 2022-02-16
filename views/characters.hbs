@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/characters.css" />
+		<title>Farming Impact</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="navigbar">
+				<!-- CHANGE THE SRC FOR THE IMG TAG ONCE YOU HAVE A LOGO -->
+				<a href="characters.hbs">
+					<img
+						id="logo"
+						src="/images/logo.png"
+						alt="Genshin Impact asset"
+					/>
+				</a>
+				<a href="characters.hbs">Characters</a>
+				<a href="builds.hbs">Builds</a>
+			</div>
+
+			<div class="char-options">
+				<div class="option">
+					<button id="albedo">
+						<img
+							src="../genshin-assets/characters/albedo.png"
+							alt="Albedo from Genshin Impact"
+						/>
+						<p>Albedo</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="amber">
+						<img
+							src="../genshin-assets/characters/amber.png"
+							alt="Amber from Genshin Impact"
+						/>
+						<p>Amber</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="barbara">
+						<img
+							src="../genshin-assets/characters/barbara.png"
+							alt="Barbara from Genshin Impact"
+						/>
+						<p>Barbara</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="beidou">
+						<img
+							src="../genshin-assets/characters/beidou.png"
+							alt="Beidou from Genshin Impact"
+						/>
+						<p>Beidou</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="bennett">
+						<img
+							src="../genshin-assets/characters/bennett.png"
+							alt="Bennett from Genshin Impact"
+						/>
+						<p>Bennett</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="chongyun">
+						<img
+							src="../genshin-assets/characters/chongyun.png"
+							alt="Chongyun from Genshin Impact"
+						/>
+						<p>Chongyun</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="diluc">
+						<img
+							src="../genshin-assets/characters/Diluc.png"
+							alt="Diluc from Genshin Impact"
+						/>
+						<p>Diluc</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="diona">
+						<img
+							src="../genshin-assets/characters/diona.png"
+							alt="Diona from Genshin Impact"
+						/>
+						<p>Diona</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="fischl">
+						<img
+							src="../genshin-assets/characters/fischl.png"
+							alt="Fischl from Genshin Impact"
+						/>
+						<p>Fischl</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="ganyu">
+						<img
+							src="../genshin-assets/characters/ganyu.png"
+							alt="Ganyu from Genshin Impact"
+						/>
+						<p>Ganyu</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="hu_tao">
+						<img
+							src="../genshin-assets/characters/hu_tao.png"
+							alt="Hu Tao from Genshin Impact"
+						/>
+						<p>Hu Tao</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="jean">
+						<img
+							src="../genshin-assets/characters/jean.png"
+							alt="Jean from Genshin Impact"
+						/>
+						<p>Jean</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="kaeya">
+						<img
+							src="../genshin-assets/characters/kaeya.png"
+							alt="Kaeya from Genshin Impact"
+						/>
+						<p>Kaeya</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="keqing">
+						<img
+							src="../genshin-assets/characters/keqing.png"
+							alt="Keqing from Genshin Impact"
+						/>
+						<p>Keqing</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="klee">
+						<img
+							src="../genshin-assets/characters/klee.png"
+							alt="Klee from Genshin Impact"
+						/>
+						<p>Klee</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="lisa">
+						<img
+							src="../genshin-assets/characters/lisa.png"
+							alt="Lisa from Genshin Impact"
+						/>
+						<p>Lisa</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="mona">
+						<img
+							src="../genshin-assets/characters/mona.png"
+							alt="Mona from Genshin Impact"
+						/>
+						<p>Mona</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="ningguang">
+						<img
+							src="../genshin-assets/characters/ningguang.png"
+							alt="Ningguang from Genshin Impact"
+						/>
+						<p>Ningguang</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="noelle">
+						<img
+							src="../genshin-assets/characters/noelle.png"
+							alt="Noelle from Genshin Impact"
+						/>
+						<p>Noelle</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="qiqi">
+						<img
+							src="../genshin-assets/characters/qiqi.png"
+							alt="Qiqi from Genshin Impact"
+						/>
+						<p>Qiqi</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="razor">
+						<img
+							src="../genshin-assets/characters/razor.png"
+							alt="Razor from Genshin Impact"
+						/>
+						<p>Razor</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="rosaria">
+						<img
+							src="../genshin-assets/characters/rosaria.png"
+							alt="Rosaria from Genshin Impact"
+						/>
+						<p>Rosaria</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="sucrose">
+						<img
+							src="../genshin-assets/characters/sucrose.png"
+							alt="Sucrose from Genshin Impact"
+						/>
+						<p>Sucrose</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="tartaglia">
+						<img
+							src="../genshin-assets/characters/tartaglia.png"
+							alt="Tartaglia from Genshin Impact"
+						/>
+						<p>Tartaglia</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="traveler">
+						<img
+							src="../genshin-assets/characters/traveler.png"
+							alt="Traveler from Genshin Impact"
+						/>
+						<p>Traveler (Geo)</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="venti">
+						<img
+							src="../genshin-assets/characters/venti.png"
+							alt="Venti from Genshin Impact"
+						/>
+						<p>Venti</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="xiangling">
+						<img
+							src="../genshin-assets/characters/xiangling.png"
+							alt="Xiangling from Genshin Impact"
+						/>
+						<p>Xiangling</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="xiao">
+						<img
+							src="../genshin-assets/characters/xiao.png"
+							alt="Xiao from Genshin Impact"
+						/>
+						<p>Xiao</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="xingqiu">
+						<img
+							src="../genshin-assets/characters/xingqiu.png"
+							alt="Xingqiu from Genshin Impact"
+						/>
+						<p>Xingqiu</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="xinyan">
+						<img
+							src="../genshin-assets/characters/xinyan.png"
+							alt="Xinyan from Genshin Impact"
+						/>
+						<p>Xinyan</p>
+					</button>
+				</div>
+
+				<div class="option">
+					<button id="zhongli">
+						<img
+							src="../genshin-assets/characters/zhongli.png"
+							alt="Zhongli from Genshin Impact"
+						/>
+						<p>Zhongli</p>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

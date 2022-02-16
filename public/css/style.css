@@ -1,0 +1,30 @@
+body {
+	background-color: rgb(24, 24, 24);
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.navigbar {
+	margin-bottom: 5%;
+}
+
+.navigbar a {
+	padding-right: 30px;
+	color: rgb(78, 78, 78);
+}
+
+.navigbar a:hover {
+	color: rgb(196, 196, 196);
+}
+
+#logo {
+	width: 50px;
+}
