@@ -40,6 +40,10 @@ const indexController = {
         res.render('login', {});
     },
 
+    getCharacter: function(req, res) {
+        
+    },
+
     /**
      * postLogin
      * 

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("eto");
 
     $('#submit-signup').click(function(e) {
         e.preventDefault();

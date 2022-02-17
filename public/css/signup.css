@@ -1,0 +1,11 @@
+body {
+	background-image: url("../images/signup-background.jpg");
+}
+
+.btn {
+	background-color: rgb(37, 98, 151);
+}
+
+.btn:hover {
+	background-color: rgb(21, 60, 94);
+}

@@ -12,21 +12,28 @@
 		/>
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/characters.css" />
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
 		<title>Farming Impact</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="navigbar">
 				<!-- CHANGE THE SRC FOR THE IMG TAG ONCE YOU HAVE A LOGO -->
-				<a href="characters.hbs">
-					<img
-						id="logo"
-						src="/images/logo.png"
-						alt="Genshin Impact asset"
-					/>
-				</a>
-				<a href="characters.hbs">Characters</a>
-				<a href="builds.hbs">Builds</a>
+				<div>
+					<a href="/">
+						<img
+							id="logo"
+							src="/images/logo.png"
+							alt="Genshin Impact asset"
+						/>
+					</a>
+					<a href="/">Characters</a>
+					<a href="/builds">Builds</a>
+				</div>
+				<div>
+					<a href="/logout">Logout</a>
+				</div>
 			</div>
 
 			<div class="char-options">
@@ -347,5 +354,6 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script src="/js/characters.js"></script>
 	</body>
 </html>

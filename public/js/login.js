@@ -16,7 +16,8 @@ $(document).ready(function () {
                 done();
             }
             else {
-                window.location = '/login';
+                alert("Password does not match")
+                window.location = '/';
                 done();
             }
         });

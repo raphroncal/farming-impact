@@ -1,6 +1,5 @@
 body {
 	background-image: url("../images/login-background.jpg");
-	background-color: #eea300;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -13,7 +12,7 @@ body {
 }
 
 .child {
-	background-color: rgb(53, 53, 53, 0.7);
+	background-color: rgb(53, 53, 53);
 	padding: 25px 25px 25px 25px;
 	border-radius: 10px;
 }

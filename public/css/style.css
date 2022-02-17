@@ -14,6 +14,9 @@ a {
 
 .navigbar {
 	margin-bottom: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .navigbar a {
@@ -22,6 +25,14 @@ a {
 }
 
 .navigbar a:hover {
+	color: rgb(196, 196, 196);
+}
+
+.navigbar button {
+	color: rgb(78, 78, 78);
+}
+
+.navigbar button:hover {
 	color: rgb(196, 196, 196);
 }
 
