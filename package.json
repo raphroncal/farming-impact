@@ -1,8 +1,14 @@
 {
   "name": "farming-impact",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/raphroncal/farming-impact.git",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raphroncal/farming-impact.git"
+  },
   "author": "raphroncal <raph.roncal01@gmail.com>",
   "license": "MIT",
   "dependencies": {

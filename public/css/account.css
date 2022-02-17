@@ -1,5 +1,5 @@
 body {
-	background-image: url("../genshin-assets/login-background.jpg");
+	background-image: url("../images/login-background.jpg");
 	background-color: #eea300;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -12,10 +12,20 @@ body {
 	height: 100vh;
 }
 
-form {
-	padding: 25px 25px 25px 25px;
+.child {
 	background-color: rgb(53, 53, 53, 0.7);
+	padding: 25px 25px 25px 25px;
 	border-radius: 10px;
+}
+
+h1 {
+	color: white;
+	font-size: 25px;
+	margin-bottom: 10%;
+}
+
+form {
+	margin-bottom: 5%;
 }
 
 input {
@@ -33,4 +43,12 @@ label {
 
 .btn:hover {
 	background-color: #d49100;
+}
+
+p {
+	color: white;
+}
+
+a {
+	text-decoration: none;
 }

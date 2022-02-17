@@ -7,7 +7,6 @@ const url = process.env.DB_URL;
 const options = {
     useUnifiedTopology: true,
     useNewUrlParser: true,
-    useFindAndModify: false
 };
 
 const database = {
