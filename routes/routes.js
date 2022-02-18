@@ -10,6 +10,10 @@ app.get('/logout', indexController.getLogOut);
 app.get('/characters', indexController.getCharacters);
 app.get('/character', indexController.getCharacter);
 
+app.get('/characters/albedo', indexController.getAlbedo);
+app.get('/characters/:name', indexController.getCharacter);
+
+
 app.post('/sign-up', indexController.postSignUp);
 app.post('/login', indexController.postLogin);
 

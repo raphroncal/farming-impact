@@ -47,6 +47,23 @@ const indexController = {
     },
 
     /**
+     * getAlbedo
+     * 
+     * renders Albedo character page
+     * @param {*} req 
+     * @param {*} res 
+     */
+    getAlbedo: function(req, res) {
+        let data = {
+            name: "Albedo",
+            element: "Geo",
+            description: "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius."
+        }
+
+        res.render('characters', {});
+    },
+
+    /**
      * getLogOut
      * 
      * destroys the session and returns back to the login page

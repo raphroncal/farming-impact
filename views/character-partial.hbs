@@ -37,11 +37,10 @@
 			<div class="main-content">
 				<div class="details col-3">
 					<img id="icon" src="/images/cards/aether-card.png" />
-					<h1>Aether</h1>
-					<h2>Anemo</h2>
+					<h1>{{ name }}</h1>
+					<h2>{{ element }}</h2>
 					<p>
-						A traveler from another world who had their only kin taken away,
-						forcing them to embark on a journey to find The Seven.
+						{{ description }}
 					</p>
 				</div>
 				<div class="materials col-9">
@@ -67,6 +66,7 @@
 						</div>
 					</div>
 
+                    {{!-- PARTIAL HERE!!! --}}
 					<h2>Character-Specific Materials</h2>
 					<div class="mats">
 						<div class="mat">
