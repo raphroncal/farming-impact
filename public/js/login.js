@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     $('#submit').click(function(e) {
         e.preventDefault();
 
@@ -14,6 +14,9 @@ $(document).ready(function () {
             if(result == 'characters') {
                 window.location = '/characters';
                 done();
+            }
+            else if (result == 'alert') {
+                alert("Username does not exist");
             }
             else {
                 alert("Password does not match")

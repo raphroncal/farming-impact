@@ -83,8 +83,11 @@ const indexController = {
         let password = req.body.password;
 
         User.findOne({username: username}, (err, result) => {
-            if(!result)
+            if(!result) {
                 console.log(err);
+                res.send('alert');
+            }
+                
             else {
                 if(password == result.password)
                     res.send('characters');
