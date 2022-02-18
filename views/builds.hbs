@@ -17,21 +17,26 @@
 	<body>
 		<div class="container">
 			<div class="navigbar">
-				<!-- CHANGE THE SRC FOR THE IMG TAG ONCE YOU HAVE A LOGO -->
-				<a href="characters.hbs">
-					<img
-						id="logo"
-						src="../genshin-assets/logo.png"
-						alt="Genshin Impact asset"
-					/>
-				</a>
-				<a href="characters.hbs">Characters</a>
-				<a href="builds.hbs">Builds</a>
+				<div>
+					<a href="/characters">
+						<img
+							id="logo"
+							src="/images/logo.png"
+							alt="Genshin Impact asset"
+						/>
+					</a>
+					<a href="/characters">Characters</a>
+					<a href="/builds">Builds</a>
+				</div>
+				<div>
+					<a href="/logout">Logout</a>
+				</div>
 			</div>
+			
 			<div class="main-content">
 				<p>
 					No builds yet. Pick a character to build in the
-					<a href="characters.hbs">Characters</a> page!
+					<a href="/characters">Characters</a> page!
 				</p>
 			</div>
 		</div>
@@ -41,5 +46,6 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script src="/js/login.js"></script>
 	</body>
 </html>

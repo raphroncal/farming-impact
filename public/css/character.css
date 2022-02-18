@@ -1,0 +1,74 @@
+.main-content {
+	background-color: rgb(36, 36, 36);
+	border-radius: 10px;
+	padding: 2% 0 2% 0;
+	color: white;
+	display: flex;
+	flex-direction: row;
+}
+
+.details {
+	border-right: 1px solid rgb(53, 53, 53);
+	padding: 0 2% 0 2%;
+	width: 25%;
+}
+
+#icon {
+	width: 150px;
+}
+
+#name {
+	color: white;
+	font-size: 20px;
+	margin-bottom: 2%;
+}
+
+#element {
+	color: aquamarine;
+}
+
+h2 {
+	color: white;
+	font-size: 16px;
+	margin-bottom: 2%;
+}
+
+#description {
+	font-size: 12px;
+	color: rgb(170, 170, 170);
+}
+
+.materials {
+	padding: 0 2% 0 2%;
+}
+
+.mats {
+	display: flex;
+	column-gap: 10px;
+	margin-bottom: 5%;
+}
+
+.mat {
+	background-color: rgb(53, 53, 53);
+	border-radius: 5%;
+	width: 65px;
+}
+
+.mat-icon {
+	height: 50px;
+	margin: 10% 5% 10% 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.price {
+	background-color: rgb(77, 77, 77);
+	border-radius: 0 0 5% 5%;
+}
+
+.mat p {
+	font-size: small;
+	text-align: center;
+	margin: 0 0 0 0;
+}

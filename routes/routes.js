@@ -5,10 +5,10 @@ const app = express();
 
 app.get('/', indexController.getIndex);
 app.get('/sign-up', indexController.getSignUp);
-app.get('/characters', indexController.getCharacters);
+app.get('/builds', indexController.getBuilds);
 app.get('/logout', indexController.getLogOut);
-
-app.get('/characters/:character', indexController.getCharacter);
+app.get('/characters', indexController.getCharacters);
+app.get('/character', indexController.getCharacter);
 
 app.post('/sign-up', indexController.postSignUp);
 app.post('/login', indexController.postLogin);

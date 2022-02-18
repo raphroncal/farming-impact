@@ -24,8 +24,26 @@ const indexController = {
         res.render('signup', {});
     },
 
+    /**
+     * getCharacters
+     * 
+     * renders the characters page
+     * @param {*} req 
+     * @param {*} res 
+     */
     getCharacters: function(req, res) {
         res.render('characters', {});
+    },
+
+    /**
+     * getCharacter
+     * 
+     * renders the character page
+     * @param {*} req 
+     * @param {*} res 
+     */
+     getCharacter: function(req, res) {
+        res.render('character', {});
     },
 
     /**
@@ -36,12 +54,20 @@ const indexController = {
      * @param {*} res 
      */
     getLogOut: function(req,res) {
+        console.log("session destroyed");
         req.session.destroy();
         res.render('login', {});
     },
 
-    getCharacter: function(req, res) {
-        
+    /**
+     * getBuilds
+     * 
+     * renders the builds page
+     * @param {*} req 
+     * @param {*} res 
+     */
+    getBuilds: function(req, res) {
+        res.render('builds', {});
     },
 
     /**
