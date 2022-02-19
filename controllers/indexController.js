@@ -60,7 +60,7 @@ const indexController = {
             description: "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius."
         }
 
-        res.render('characters', {});
+        res.render('character-partial', data);
     },
 
     /**
