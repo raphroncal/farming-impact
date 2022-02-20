@@ -4,13 +4,11 @@
 	padding: 2% 0 2% 0;
 	color: white;
 	display: flex;
-	flex-direction: row;
 }
 
-.details {
+.col-3 {
 	border-right: 1px solid rgb(53, 53, 53);
 	padding: 0 2% 0 2%;
-	width: 25%;
 }
 
 #icon {
@@ -38,7 +36,25 @@ h2 {
 	color: rgb(170, 170, 170);
 }
 
-.materials {
+.form-select {
+	display: inline;
+	width: auto;
+}
+
+.field {
+	margin-bottom: 20px;
+}
+
+legend {
+	margin: 0;
+	font-size: large;
+}
+
+.btns {
+	margin-top: 20%;
+}
+
+.col-6 {
 	padding: 0 2% 0 2%;
 }
 
@@ -50,7 +66,7 @@ h2 {
 
 .mat {
 	background-color: rgb(53, 53, 53);
-	border-radius: 5%;
+	border-radius: 5px;
 	width: 65px;
 }
 
@@ -64,7 +80,7 @@ h2 {
 
 .price {
 	background-color: rgb(77, 77, 77);
-	border-radius: 0 0 5% 5%;
+	border-radius: 0 0 5px 5px;
 }
 
 .mat p {

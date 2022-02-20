@@ -35,16 +35,189 @@
 			</div>
 
 			<div class="main-content">
-				<div class="details col-3">
-					<img id="icon" src="/images/cards/aether-card.png" />
+				{{!-- Character Details --}}
+				<div class="col-3">
+					<img id="icon" src="/images/cards/aether_card.png" />
 					<h1 id="name">{{ name }}</h1>
 					<h2 id="element">{{ element }}</h2>
 					<p id="description">
 						{{ description }}
 					</p>
 				</div>
-				<div class="materials col-9">
-					<h2>General Materials</h2>
+
+				{{!-- Calculator --}}
+				<div class="col-3">
+					<form action="builds.html">
+						<div class="field">
+							<legend>Level</legend>
+							<select
+								id="starting-level"
+								class="form-select form-select-sm"
+								aria-label="starting character level"
+							>
+								<option value="1">1</option>
+								<option value="20">20</option>
+								<option value="20A">20⭐️</option>
+								<option value="40">40</option>
+								<option value="40A">40⭐️</option>
+								<option value="50">50</option>
+								<option value="50A">50⭐️</option>
+								<option value="60">60</option>
+								<option value="60A">60⭐️</option>
+								<option value="70">70</option>
+								<option value="70A">70⭐️</option>
+								<option value="80">80</option>
+								<option value="80A">80⭐️</option>
+								<option value="90">90</option>
+							</select>
+							<select
+								id="target-level"
+								class="form-select form-select-sm"
+								aria-label="target character level"
+							>
+								<option value="1">1</option>
+								<option value="20">20</option>
+								<option value="20A">20⭐️</option>
+								<option value="40">40</option>
+								<option value="40A">40⭐️</option>
+								<option value="50">50</option>
+								<option value="50A">50⭐️</option>
+								<option value="60">60</option>
+								<option value="60A">60⭐️</option>
+								<option value="70">70</option>
+								<option value="70A">70⭐️</option>
+								<option value="80">80</option>
+								<option value="80A">80⭐️</option>
+								<option value="90">90</option>
+							</select>
+						</div>
+
+						<div class="field">
+							<legend>Normal Attack</legend>
+							<select
+								id="starting-normal"
+								class="form-select form-select-sm"
+								aria-label="starting normal attack level"
+							>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+							<select
+								id="target-normal"
+								class="form-select form-select-sm"
+								aria-label="target normal attack level"
+							>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+
+						<div class="field">
+							<legend>Skill</legend>
+							<select
+								id="starting-skill"
+								class="form-select form-select-sm"
+								aria-label="starting skill level"
+							>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+							<select
+								id="target-skill"
+								class="form-select form-select-sm"
+								aria-label="target skill level"
+							>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+
+						<div class="field">
+							<legend>Burst</legend>
+							<select
+								id="starting-burst"
+								class="form-select form-select-sm"
+								aria-label="starting burst level"
+							>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+							<select
+								id="target-burst"
+								class="form-select form-select-sm"
+								aria-label="target burst level"
+							>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+
+						<div class="btns">
+							<button
+								id="calculate"
+								type="button"
+								class="btn btn-primary btn-sm"
+							>
+								Calculate
+							</button>
+							<button id="add" type="submit" class="btn btn-primary btn-sm">
+								Add to Builds
+							</button>
+						</div>
+					</form>
+				</div>
+
+				{{!-- Material Display --}}
+				<div class="col-6">
+					<legend>General Materials</legend>
 					<div class="mats">
 						<div class="mat">
 							<img
@@ -52,7 +225,7 @@
 								src="/images/materials/mora.png"
 							/>
 							<div class="price">
-								<p>2.09 M</p>
+								<p id="mora">2.09 M</p>
 							</div>
 						</div>
 						<div class="mat">
@@ -61,13 +234,12 @@
 								src="/images/materials/heros_wit.png"
 							/>
 							<div class="price">
-								<p>419</p>
+								<p id="wits">419</p>
 							</div>
 						</div>
 					</div>
 
-                    {{!-- PARTIAL HERE!!! --}}
-					<h2>Character-Specific Materials</h2>
+					<legend>Character-Specific Materials</legend>
 					<div class="mats">
 						<div class="mat">
 							<img
@@ -75,7 +247,36 @@
 								src="/images/materials/qingxin.png"
 							/>
 							<div class="price">
-								<p>168</p>
+								<p id="local">168</p>
+							</div>
+						</div>
+
+						<!-- Gems -->
+						<div class="mat">
+							<img
+								class="mat-icon"
+								src="/images/materials/vayuda_turquoise_sliver.png"
+							/>
+							<div class="price">
+								<p id="sliver">1</p>
+							</div>
+						</div>
+						<div class="mat">
+							<img
+								class="mat-icon"
+								src="/images/materials/vayuda_turquoise_fragment.png"
+							/>
+							<div class="price">
+								<p id="fragment">9</p>
+							</div>
+						</div>
+						<div class="mat">
+							<img
+								class="mat-icon"
+								src="/images/materials/vayuda_turquoise_chunk.png"
+							/>
+							<div class="price">
+								<p id="chunk">9</p>
 							</div>
 						</div>
 						<div class="mat">
@@ -84,9 +285,10 @@
 								src="/images/materials/vayuda_turquoise_gemstone.png"
 							/>
 							<div class="price">
-								<p>6</p>
+								<p id="gemstone">6</p>
 							</div>
 						</div>
+
 						<div class="mat">
 							<img
 								class="mat-icon"
@@ -96,21 +298,36 @@
 								<p>46</p>
 							</div>
 						</div>
+
+						<!-- Common Enemy Materials -->
+						<div class="mat">
+							<img
+								class="mat-icon"
+								src="/images/materials/slime_condensate.png"
+							/>
+							<div class="price">
+								<p id="gray">18</p>
+							</div>
+						</div>
+						<div class="mat">
+							<img
+								class="mat-icon"
+								src="/images/materials/slime_secretions.png"
+							/>
+							<div class="price">
+								<p id="green">30</p>
+							</div>
+						</div>
 						<div class="mat">
 							<img
 								class="mat-icon"
 								src="/images/materials/slime_concentrate.png"
 							/>
 							<div class="price">
-								<p>36</p>
+								<p id="blue">36</p>
 							</div>
 						</div>
 					</div>
-					<form action="/builds">
-						<button id="add" type="submit" class="btn btn-primary btn-sm">
-							Add to Builds
-						</button>
-					</form>
 				</div>
 			</div>
 		</div>
