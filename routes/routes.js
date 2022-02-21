@@ -15,6 +15,7 @@ app.get('/characters/aether', characterController.getAether);
 app.get('/characters/albedo', characterController.getAlbedo);
 app.get('/characters/chongyun', characterController.getChongyun);
 app.get('/characters/hu_tao', characterController.getHuTao);
+app.get('/characters/kazuha', characterController.getKazuha);
 app.get('/characters/klee', characterController.getKlee);
 app.get('/characters/lisa', characterController.getLisa);
 app.get('/characters/venti', characterController.getVenti);
