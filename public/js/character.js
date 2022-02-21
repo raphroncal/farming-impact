@@ -1,5 +1,31 @@
 $(document).ready(function(e) {
 
+    let element = $('#element');
+console.log(element.text());
+    switch(element.text()) {
+        case "Anemo":
+            element.css('color', 'rgb(128,255,215)');
+            break;
+        case "Cryo":
+            element.css('color', 'rgb(153,255,255)');
+            break;
+        case "Dendro":
+            element.css('color', 'rgb(153,242,133)');
+            break;
+        case "Electro":
+            element.css('color', 'rgb(255,172,255)');
+            break;
+        case "Geo":
+            element.css('color', 'rgb(255,230,103)');
+            break;
+        case "Hydro":
+            element.css('color', 'rgb(128,192,255)');
+            break;
+        case "Pyro":
+            element.css('color', 'rgb(255,153,153)');
+            break;
+    }
+
     const mora = {
         twenty:         24200,
         twentyAscend:   44200,
@@ -563,18 +589,6 @@ $(document).ready(function(e) {
         totalGrayEnemyMats = targetGrayEnemyMats - spentGrayEnemyMats;
         totalGreenEnemyMats = targetGreenEnemyMats - spentGreenEnemyMats;
         totalBlueEnemyMats = targetBlueEnemyMats - spentBlueEnemyMats;
-
-        console.log("Mora = " + totalMora);
-        console.log("Books = " + totalBooks);
-        console.log("Locals = " + totalLocals);
-        console.log("Sliver = " + totalGreenGems);
-        console.log("Fragment = " + totalBlueGems);
-        console.log("Chunk = " + totalPurpleGems);
-        console.log("Gemstone = " + totalGoldGems);
-        console.log("Boss = " + totalBossMats);
-        console.log("Grays = " + totalGrayEnemyMats);
-        console.log("Greens = " + totalGreenEnemyMats);
-        console.log("Blues = " + totalBlueEnemyMats);
 
         let formattedMora = nFormatter(totalMora, 2);
         $('#mora').text(formattedMora);
