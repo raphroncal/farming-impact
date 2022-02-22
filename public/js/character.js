@@ -1,7 +1,6 @@
 $(document).ready(function(e) {
 
     let element = $('#element');
-console.log(element.text());
     switch(element.text()) {
         case "Anemo":
             element.css('color', 'rgb(128,255,215)');
